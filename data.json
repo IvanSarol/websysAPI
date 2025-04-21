@@ -1,0 +1,18 @@
+{
+    "id": 1,
+    "name": "Jonh Doe",
+    "email": "samle@grc.com",
+    "phone": "+1-202-555-0173",
+    "address": {
+        "street": "123 Main St",
+        "city": "Anytown",
+        "state": "CA",
+        "zip": "12345"
+
+    },
+    "company": {
+        "name": "Tech Solution",
+        "posiiton": "Software Engineer",
+        "department": "Development"
+    }
+}
