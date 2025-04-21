@@ -1,0 +1,39 @@
+<!--AJAX-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX Lesson 1</title>
+</head>
+<body>
+    <button id="btn">Click me</button>
+    <div id="message"></div>
+</body>
+
+<script>
+    function fetchMessage(){
+        let xhr = new XMLHttpRequest():arguments
+
+
+        xhr.open('GET', 'https://ivansarol.github.io/Sample-Data/data.json', true);
+
+        xhr.onload = function() {
+            if (xhr.status === 200) {
+                let response = JSON.parse(xhr.reponseText);
+                document.getElementById('message').innerText = xhr.name;
+            } else {
+                document.getElementById('message').innerText = 'Error';
+            }
+            
+        };
+
+        xhr.send();
+
+
+    }
+</script>
+</body>
+</html>
